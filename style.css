@@ -4,13 +4,67 @@
     color: #261f30;
 }
 
+html {
+    padding: 10px;
+}
+
 header {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(header.jpg);
+    /*
+    background: linear-gradient(rgba(44, 8, 67, 0.819), rgba(39, 4, 62, 0.819)),  url(header.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    */
+    height: calc(100vh - 10px);
+
+
+    /*clip-path: polygon(100% 0, 100% 90%, 50% 98%, 0% 90%, 0 0);*/
+    /*clip-path: polygon(0 0, 100% 0, 100% 77%, 75% 83%, 71% 92%, 0 100%);*/
+
+    
 }
+
+.a {
+    background-color: #F5F2F3;
+    /*#f0eaeb;*/
+}
+
+@media (max-width: 991.98px) { 
+    header {
+        
+        background: linear-gradient(rgba(237, 229, 230, 0.819), rgba(237, 229, 230, 0.819)),  url(header.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        
+        height: calc(100vh - 10px);
+    
+        
+    
+        /*clip-path: polygon(100% 0, 100% 90%, 50% 98%, 0% 90%, 0 0);*/
+        /*clip-path: polygon(0 0, 100% 0, 100% 77%, 75% 83%, 71% 92%, 0 100%);*/
+    }
+
+    .a {
+        background-color: transparent;
+        /*#f0eaeb;*/
+    }
+}
+
+.picture {
+    background: url(header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
+}
+
+
 
 nav a.nav-link {
     text-decoration: none;
@@ -26,7 +80,7 @@ nav a.logo {
     font-size: 34px;
     margin-bottom: 0;
     padding-bottom: 0;
-    color: #6fb7a7;
+    color: #7E86A5; /*#6fb7a7;*/
 }
 
 header .header__text {
@@ -36,7 +90,10 @@ header .header__text {
 h1 {
     font-size: 64px;
     font-weight: 600;
-    color: #6fb7a7;
+    color: #594d6f;
+    letter-spacing: 5px;
+
+    
 }
 
 p {
@@ -76,21 +133,33 @@ p {
 /* SKILLS */
 
 article {
-    background-color: #1C1924;
+    
 }
 
-.skills_item {
+.projects_item {
     height: 180px;
     border: 1px solid #437a6e;
     border-radius: 3px;
 }
 
 .item__icon {
-    height: 24px;
-    width: 24px;
+    height: 21px;
+    width: 21px;
     fill:#437a6e;
+    margin-right: 8px;
 }
 
 h2, h5 {
     color: #6fb7a7;
+}
+
+.skills__list {
+    list-style-type: none;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.skills__list li{
+    color:#7e6e7e;
+    margin: 5px 0;
 }
